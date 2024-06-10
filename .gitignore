@@ -67,10 +67,12 @@ Temporary Items
 /css/*
 !/css/custom.css.sample
 !/css/main.css
+!/css/Tulips.png
 
 # Ignore users config file but keep the sample.
 /config/*
 !/config/config.js.sample
+!/config/config.js
 
 # Vim
 ## swap
