@@ -30,7 +30,7 @@ let config = {
 	language: "en",
 	locale: "en-US",
 	logLevel: ["INFO", "LOG", "WARN", "ERROR"], // Add "DEBUG" for even more logging
-	timeFormat: 24,
+	timeFormat: 12,
 	units: "metric",
 
 	modules: [
@@ -62,8 +62,75 @@ let config = {
 		{
 			module: "compliments",
 			position: "lower_third",
-			config:{
-				remoteFile: 'https://gist.githubusercontent.com/HansChaudry/8c43e572223374fafcf49568bd741459/raw/a41d4497b30ddbf42e886c9df0f36e9d2dcb65f7/TulipMirrorCompliments.js'
+			config: {
+				remoteFile: "https://gist.githubusercontent.com/HansChaudry/8c43e572223374fafcf49568bd741459/raw/a41d4497b30ddbf42e886c9df0f36e9d2dcb65f7/TulipMirrorCompliments.js"
+			}
+		},
+		{
+			module: "MMM-SmartTouch",
+			position: "bottom_center",    // This can be any of the regions.(bottom-center Recommended)
+			config: {
+				// None configuration options defined
+			}
+		},
+		{
+
+			/* Don't share your credentials! */
+			module: "MMM-OnSpotify",
+			position: "bottom_left", /* bottom_left, bottom_center */
+				config: {
+				clientID: "a8de92415aaa4a3796074dd1c6a444dc",
+				clientSecret: "0ed67ae0150f4c8d8f681e8db4d4c9c7",
+				accessToken: "BQCYZpYbEaTD0gHWlWDabaQ5WSmgPiO_1zQyQJ6ppkb9mwYRNylvDT5S96FisJboQbsNDpkeqonPh3OsCv5oG70MvYp90WE0u4bYHiR08ECz-ZriE4UFtcfeIXbtE-udNSA3qo21Dp_EJrlhXFFFaMARCgjTjKkDUlo7NW8YRfnYthH9xDNQB3uwdWsHAOok3JIkrqPgmQPJjg9ye5I8uoaX1Q",
+				refreshToken: "AQDmxSEP4hq_WcqOzdBVWE2chBDYZ8MPwSMfEAl2x1A0FFkKxJ7rYgaPAjkv5bEBs0KthG27IREzZCYt17IXU5TbqliKT8SWL1jfgHylqQBIVNj7YQqfHPpryGI25A6N2Xg",
+
+				/* Add here your theming and behaviour configurations */
+				advertisePlayerTheme: true,
+				displayWhenEmpty: "both",
+				userAffinityUseTracks: false,
+				prefersLargeImageSize: false,
+				hideTrackLengthAndAnimateProgress: false,
+				showDebugPalette: false,
+				userDataMaxAge: 14400,
+				userAffinityMaxAge: 36000,
+				deviceFilter: [],
+				deviceFilterExclude: false,
+				filterNoticeSubtitle: true,
+				language: "en",
+				// Update intervals [SEE BELOW]
+				isPlaying: 1,
+				isEmpty: 2,
+				isPlayingHidden: 2,
+				isEmptyHidden: 4,
+				onReconnecting: 4,
+				onError: 8,
+				// Animations [SEE BELOW]
+				mediaAnimations: false,
+				fadeAnimations: false,
+				scrollAnimations: false,
+				textAnimations: true,
+				transitionAnimations: true,
+				spotifyVectorAnimations: false,
+				// Spotify Code (EXPERMIENTAL)
+				spotifyCodeExperimentalShow: true,
+				spotifyCodeExperimentalUseColor: true,
+				spotifyCodeExperimentalSeparateItem: true,
+				// Canvas
+				experimentalCanvas: false,
+				experimentalCanvasEffect: "cover",
+				experimentalCanvasAlbumOverlay: false,
+				// Theming General
+				roundMediaCorners: true,
+				roundProgressBar: true,
+				showVerticalPipe: true,
+				useColorInProgressBar: true,
+				useColorInTitle: true,
+				useColorInUserData: true,
+				showBlurBackground: true,
+				blurCorrectionInFrameSide: false,
+				blurCorrectionInAllSides: false,
+				alwaysUseDefaultDeviceIcon: false,
+				experimentalCSSOverridesForMM2: false, // [SEE BELOW]
 			}
 		},
 		// {
