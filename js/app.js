@@ -9,6 +9,7 @@ const Log = require("logger");
 const Server = require(`${__dirname}/server`);
 const Utils = require(`${__dirname}/utils`);
 const defaultModules = require(`${__dirname}/../modules/default/defaultmodules`);
+const { getEnvVarsAsObj } = require(`${__dirname}/server_functions`);
 
 // Get version number.
 global.version = require(`${__dirname}/../package.json`).version;
@@ -58,6 +59,10 @@ function App () {
 	async function loadConfig () {
 		Log.log("Loading config ...");
 		const defaults = require(`${__dirname}/defaults`);
+		if (process.env.JEST_WORKER_ID !== undefined) {
+			// if we are running with jest
+			defaults.address = "0.0.0.0";
+		}
 
 		// For this check proposed to TestSuite
 		// https://forum.magicmirror.builders/topic/1456/test-suite-for-magicmirror/8
@@ -112,6 +117,8 @@ function App () {
 			}
 		}
 
+		require(`${global.root_path}/js/check_config.js`);
+
 		try {
 			fs.accessSync(configFilename, fs.F_OK);
 			const c = require(configFilename);
@@ -155,10 +162,19 @@ function App () {
 	function loadModule (module) {
 		const elements = module.split("/");
 		const moduleName = elements[elements.length - 1];
-		let moduleFolder = `${__dirname}/../modules/${module}`;
+		const env = getEnvVarsAsObj();
+		let moduleFolder = `${__dirname}/../${env.modulesDir}/${module}`;
 
 		if (defaultModules.includes(moduleName)) {
-			moduleFolder = `${__dirname}/../modules/default/${module}`;
+			const defaultModuleFolder = `${__dirname}/../modules/default/${module}`;
+			if (process.env.JEST_WORKER_ID === undefined) {
+				moduleFolder = defaultModuleFolder;
+			} else {
+				// running in Jest, allow defaultModules placed under moduleDir for testing
+				if (env.modulesDir === "modules") {
+					moduleFolder = defaultModuleFolder;
+				}
+			}
 		}
 
 		const moduleFile = `${moduleFolder}/${module}.js`;
@@ -179,6 +195,7 @@ function App () {
 			Log.log(`No helper found for module: ${moduleName}.`);
 		}
 
+		// if the helper was found
 		if (loadHelper) {
 			const Module = require(helperPath);
 			let m = new Module();
@@ -251,10 +268,23 @@ function App () {
 
 		Log.setLogLevel(config.logLevel);
 
+		// get the used module positions
+		Utils.getModulePositions();
+
 		let modules = [];
 		for (const module of config.modules) {
-			if (!modules.includes(module.module) && !module.disabled) {
-				modules.push(module.module);
+			if (module.disabled) continue;
+			if (module.module) {
+				if (Utils.moduleHasValidPosition(module.position) || typeof (module.position) === "undefined") {
+					// Only add this module to be loaded if it is not a duplicate (repeated instance of the same module)
+					if (!modules.includes(module.module)) {
+						modules.push(module.module);
+					}
+				} else {
+					Log.warn("Invalid module position found for this configuration:" + `\n${JSON.stringify(module, null, 2)}`);
+				}
+			} else {
+				Log.warn("No module name found for this configuration:" + `\n${JSON.stringify(module, null, 2)}`);
 			}
 		}
 
