@@ -1,0 +1,640 @@
+{
+	"get": "games/",
+	"parameters": {
+		"live": "all"
+	},
+	"errors": [],
+	"results": 9,
+	"response": [
+		{
+			"id": 14777,
+			"league": "standard",
+			"season": 2024,
+			"date": {
+				"start": "2025-01-30T00:00:00.000Z",
+				"end": null,
+				"duration": null
+			},
+			"stage": 2,
+			"status": {
+				"clock": "2:29",
+				"halftime": false,
+				"short": 2,
+				"long": "In Play"
+			},
+			"periods": {
+				"current": 3,
+				"total": 4,
+				"endOfPeriod": false
+			},
+			"arena": {
+				"name": "Spectrum Center",
+				"city": "Charlotte",
+				"state": "NC",
+				"country": null
+			},
+			"teams": {
+				"visitors": {
+					"id": 4,
+					"name": "Brooklyn Nets",
+					"nickname": "Nets",
+					"code": "BKN",
+					"logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Brooklyn_Nets_newlogo.svg/130px-Brooklyn_Nets_newlogo.svg.png"
+				},
+				"home": {
+					"id": 5,
+					"name": "Charlotte Hornets",
+					"nickname": "Hornets",
+					"code": "CHA",
+					"logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/f/f3/Hornets_de_Charlotte_logo.svg/1200px-Hornets_de_Charlotte_logo.svg.png"
+				}
+			},
+			"scores": {
+				"visitors": {
+					"win": 0,
+					"loss": 0,
+					"series": {
+						"win": 0,
+						"loss": 0
+					},
+					"linescore": ["26", "27", "24", ""],
+					"points": 77
+				},
+				"home": {
+					"win": 0,
+					"loss": 0,
+					"series": {
+						"win": 0,
+						"loss": 0
+					},
+					"linescore": ["19", "18", "23", ""],
+					"points": 60
+				}
+			},
+			"officials": [],
+			"timesTied": null,
+			"leadChanges": null,
+			"nugget": null
+		},
+		{
+			"id": 14778,
+			"league": "standard",
+			"season": 2024,
+			"date": {
+				"start": "2025-01-30T00:00:00.000Z",
+				"end": null,
+				"duration": null
+			},
+			"stage": 2,
+			"status": {
+				"clock": "5:40",
+				"halftime": false,
+				"short": 2,
+				"long": "In Play"
+			},
+			"periods": {
+				"current": 3,
+				"total": 4,
+				"endOfPeriod": false
+			},
+			"arena": {
+				"name": "Gainbridge Fieldhouse",
+				"city": "Indianapolis",
+				"state": "IN",
+				"country": null
+			},
+			"teams": {
+				"visitors": {
+					"id": 10,
+					"name": "Detroit Pistons",
+					"nickname": "Pistons",
+					"code": "DET",
+					"logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Logo_of_the_Detroit_Pistons.png/300px-Logo_of_the_Detroit_Pistons.png"
+				},
+				"home": {
+					"id": 15,
+					"name": "Indiana Pacers",
+					"nickname": "Pacers",
+					"code": "IND",
+					"logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/c/cf/Pacers_de_l%27Indiana_logo.svg/1180px-Pacers_de_l%27Indiana_logo.svg.png"
+				}
+			},
+			"scores": {
+				"visitors": {
+					"win": 0,
+					"loss": 0,
+					"series": {
+						"win": 0,
+						"loss": 0
+					},
+					"linescore": ["33", "31", "18", ""],
+					"points": 82
+				},
+				"home": {
+					"win": 0,
+					"loss": 0,
+					"series": {
+						"win": 0,
+						"loss": 0
+					},
+					"linescore": ["40", "34", "12", ""],
+					"points": 86
+				}
+			},
+			"officials": [],
+			"timesTied": null,
+			"leadChanges": null,
+			"nugget": null
+		},
+		{
+			"id": 14779,
+			"league": "standard",
+			"season": 2024,
+			"date": {
+				"start": "2025-01-30T00:00:00.000Z",
+				"end": null,
+				"duration": null
+			},
+			"stage": 2,
+			"status": {
+				"clock": "4:12",
+				"halftime": false,
+				"short": 2,
+				"long": "In Play"
+			},
+			"periods": {
+				"current": 3,
+				"total": 4,
+				"endOfPeriod": false
+			},
+			"arena": {
+				"name": "Capital One Arena",
+				"city": "Washington",
+				"state": "DC",
+				"country": null
+			},
+			"teams": {
+				"visitors": {
+					"id": 38,
+					"name": "Toronto Raptors",
+					"nickname": "Raptors",
+					"code": "TOR",
+					"logo": "https://upload.wikimedia.org/wikipedia/fr/8/89/Raptors2015.png"
+				},
+				"home": {
+					"id": 41,
+					"name": "Washington Wizards",
+					"nickname": "Wizards",
+					"code": "WAS",
+					"logo": "https://upload.wikimedia.org/wikipedia/fr/archive/d/d6/20161212034849%21Wizards2015.png"
+				}
+			},
+			"scores": {
+				"visitors": {
+					"win": 0,
+					"loss": 0,
+					"series": {
+						"win": 0,
+						"loss": 0
+					},
+					"linescore": ["31", "26", "14", ""],
+					"points": 71
+				},
+				"home": {
+					"win": 0,
+					"loss": 0,
+					"series": {
+						"win": 0,
+						"loss": 0
+					},
+					"linescore": ["18", "20", "12", ""],
+					"points": 50
+				}
+			},
+			"officials": [],
+			"timesTied": null,
+			"leadChanges": null,
+			"nugget": null
+		},
+		{
+			"id": 14780,
+			"league": "standard",
+			"season": 2024,
+			"date": {
+				"start": "2025-01-30T00:30:00.000Z",
+				"end": null,
+				"duration": null
+			},
+			"stage": 2,
+			"status": {
+				"clock": null,
+				"halftime": true,
+				"short": 2,
+				"long": "In Play"
+			},
+			"periods": {
+				"current": 2,
+				"total": 4,
+				"endOfPeriod": false
+			},
+			"arena": {
+				"name": "TD Garden",
+				"city": "Boston",
+				"state": "MA",
+				"country": null
+			},
+			"teams": {
+				"visitors": {
+					"id": 6,
+					"name": "Chicago Bulls",
+					"nickname": "Bulls",
+					"code": "CHI",
+					"logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/d/d1/Bulls_de_Chicago_logo.svg/1200px-Bulls_de_Chicago_logo.svg.png"
+				},
+				"home": {
+					"id": 2,
+					"name": "Boston Celtics",
+					"nickname": "Celtics",
+					"code": "BOS",
+					"logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/65/Celtics_de_Boston_logo.svg/1024px-Celtics_de_Boston_logo.svg.png"
+				}
+			},
+			"scores": {
+				"visitors": {
+					"win": 0,
+					"loss": 0,
+					"series": {
+						"win": 0,
+						"loss": 0
+					},
+					"linescore": ["23", "28", "", ""],
+					"points": 51
+				},
+				"home": {
+					"win": 0,
+					"loss": 0,
+					"series": {
+						"win": 0,
+						"loss": 0
+					},
+					"linescore": ["26", "42", "", ""],
+					"points": 68
+				}
+			},
+			"officials": [],
+			"timesTied": null,
+			"leadChanges": null,
+			"nugget": null
+		},
+		{
+			"id": 14781,
+			"league": "standard",
+			"season": 2024,
+			"date": {
+				"start": "2025-01-30T00:30:00.000Z",
+				"end": null,
+				"duration": null
+			},
+			"stage": 2,
+			"status": {
+				"clock": null,
+				"halftime": true,
+				"short": 2,
+				"long": "In Play"
+			},
+			"periods": {
+				"current": 2,
+				"total": 4,
+				"endOfPeriod": false
+			},
+			"arena": {
+				"name": "Kaseya Center",
+				"city": "Miami",
+				"state": "FL",
+				"country": null
+			},
+			"teams": {
+				"visitors": {
+					"id": 7,
+					"name": "Cleveland Cavaliers",
+					"nickname": "Cavaliers",
+					"code": "CLE",
+					"logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/0/06/Cavs_de_Cleveland_logo_2017.png/150px-Cavs_de_Cleveland_logo_2017.png"
+				},
+				"home": {
+					"id": 20,
+					"name": "Miami Heat",
+					"nickname": "Heat",
+					"code": "MIA",
+					"logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/1/1c/Miami_Heat_-_Logo.svg/1200px-Miami_Heat_-_Logo.svg.png"
+				}
+			},
+			"scores": {
+				"visitors": {
+					"win": 0,
+					"loss": 0,
+					"series": {
+						"win": 0,
+						"loss": 0
+					},
+					"linescore": ["31", "28", "", ""],
+					"points": 59
+				},
+				"home": {
+					"win": 0,
+					"loss": 0,
+					"series": {
+						"win": 0,
+						"loss": 0
+					},
+					"linescore": ["21", "20", "", ""],
+					"points": 41
+				}
+			},
+			"officials": [],
+			"timesTied": null,
+			"leadChanges": null,
+			"nugget": null
+		},
+		{
+			"id": 14782,
+			"league": "standard",
+			"season": 2024,
+			"date": {
+				"start": "2025-01-30T00:30:00.000Z",
+				"end": null,
+				"duration": null
+			},
+			"stage": 2,
+			"status": {
+				"clock": null,
+				"halftime": true,
+				"short": 2,
+				"long": "In Play"
+			},
+			"periods": {
+				"current": 2,
+				"total": 4,
+				"endOfPeriod": false
+			},
+			"arena": {
+				"name": "Madison Square Garden",
+				"city": "New York",
+				"state": "NY",
+				"country": null
+			},
+			"teams": {
+				"visitors": {
+					"id": 9,
+					"name": "Denver Nuggets",
+					"nickname": "Nuggets",
+					"code": "DEN",
+					"logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/3/35/Nuggets_de_Denver_2018.png/180px-Nuggets_de_Denver_2018.png"
+				},
+				"home": {
+					"id": 24,
+					"name": "New York Knicks",
+					"nickname": "Knicks",
+					"code": "NYK",
+					"logo": "https://upload.wikimedia.org/wikipedia/fr/3/34/Knicks_de_NY.png"
+				}
+			},
+			"scores": {
+				"visitors": {
+					"win": 0,
+					"loss": 0,
+					"series": {
+						"win": 0,
+						"loss": 0
+					},
+					"linescore": ["27", "27", "", ""],
+					"points": 54
+				},
+				"home": {
+					"win": 0,
+					"loss": 0,
+					"series": {
+						"win": 0,
+						"loss": 0
+					},
+					"linescore": ["31", "29", "", ""],
+					"points": 60
+				}
+			},
+			"officials": [],
+			"timesTied": null,
+			"leadChanges": null,
+			"nugget": null
+		},
+		{
+			"id": 14783,
+			"league": "standard",
+			"season": 2024,
+			"date": {
+				"start": "2025-01-30T00:30:00.000Z",
+				"end": null,
+				"duration": null
+			},
+			"stage": 2,
+			"status": {
+				"clock": null,
+				"halftime": true,
+				"short": 2,
+				"long": "In Play"
+			},
+			"periods": {
+				"current": 2,
+				"total": 4,
+				"endOfPeriod": false
+			},
+			"arena": {
+				"name": "Wells Fargo Center",
+				"city": "Philadelphia",
+				"state": "PA",
+				"country": null
+			},
+			"teams": {
+				"visitors": {
+					"id": 30,
+					"name": "Sacramento Kings",
+					"nickname": "Kings",
+					"code": "SAC",
+					"logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/9/95/Kings_de_Sacramento_logo.svg/1200px-Kings_de_Sacramento_logo.svg.png"
+				},
+				"home": {
+					"id": 27,
+					"name": "Philadelphia 76ers",
+					"nickname": "76ers",
+					"code": "PHI",
+					"logo": "https://upload.wikimedia.org/wikipedia/fr/4/48/76ers_2016.png"
+				}
+			},
+			"scores": {
+				"visitors": {
+					"win": 0,
+					"loss": 0,
+					"series": {
+						"win": 0,
+						"loss": 0
+					},
+					"linescore": ["30", "26", "", ""],
+					"points": 56
+				},
+				"home": {
+					"win": 0,
+					"loss": 0,
+					"series": {
+						"win": 0,
+						"loss": 0
+					},
+					"linescore": ["28", "32", "", ""],
+					"points": 60
+				}
+			},
+			"officials": [],
+			"timesTied": null,
+			"leadChanges": null,
+			"nugget": null
+		},
+		{
+			"id": 14784,
+			"league": "standard",
+			"season": 2024,
+			"date": {
+				"start": "2025-01-30T01:00:00.000Z",
+				"end": null,
+				"duration": null
+			},
+			"stage": 2,
+			"status": {
+				"clock": "6:49",
+				"halftime": false,
+				"short": 2,
+				"long": "In Play"
+			},
+			"periods": {
+				"current": 2,
+				"total": 4,
+				"endOfPeriod": false
+			},
+			"arena": {
+				"name": "Smoothie King Center",
+				"city": "New Orleans",
+				"state": "LA",
+				"country": null
+			},
+			"teams": {
+				"visitors": {
+					"id": 8,
+					"name": "Dallas Mavericks",
+					"nickname": "Mavericks",
+					"code": "DAL",
+					"logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/b/b8/Mavericks_de_Dallas_logo.svg/150px-Mavericks_de_Dallas_logo.svg.png"
+				},
+				"home": {
+					"id": 23,
+					"name": "New Orleans Pelicans",
+					"nickname": "Pelicans",
+					"code": "NOP",
+					"logo": "https://upload.wikimedia.org/wikipedia/fr/thumb/2/21/New_Orleans_Pelicans.png/200px-New_Orleans_Pelicans.png"
+				}
+			},
+			"scores": {
+				"visitors": {
+					"win": 0,
+					"loss": 0,
+					"series": {
+						"win": 0,
+						"loss": 0
+					},
+					"linescore": ["35", "10", "", ""],
+					"points": 45
+				},
+				"home": {
+					"win": 0,
+					"loss": 0,
+					"series": {
+						"win": 0,
+						"loss": 0
+					},
+					"linescore": ["32", "7", "", ""],
+					"points": 39
+				}
+			},
+			"officials": [],
+			"timesTied": null,
+			"leadChanges": null,
+			"nugget": null
+		},
+		{
+			"id": 14785,
+			"league": "standard",
+			"season": 2024,
+			"date": {
+				"start": "2025-01-30T01:00:00.000Z",
+				"end": null,
+				"duration": null
+			},
+			"stage": 2,
+			"status": {
+				"clock": "7:47",
+				"halftime": false,
+				"short": 2,
+				"long": "In Play"
+			},
+			"periods": {
+				"current": 2,
+				"total": 4,
+				"endOfPeriod": false
+			},
+			"arena": {
+				"name": "Frost Bank Center",
+				"city": "San Antonio",
+				"state": "TX",
+				"country": null
+			},
+			"teams": {
+				"visitors": {
+					"id": 16,
+					"name": "LA Clippers",
+					"nickname": "Clippers",
+					"code": "LAC",
+					"logo": "https://upload.wikimedia.org/wikipedia/fr/d/d6/Los_Angeles_Clippers_logo_2010.png"
+				},
+				"home": {
+					"id": 31,
+					"name": "San Antonio Spurs",
+					"nickname": "Spurs",
+					"code": "SAS",
+					"logo": "https://upload.wikimedia.org/wikipedia/fr/0/0e/San_Antonio_Spurs_2018.png"
+				}
+			},
+			"scores": {
+				"visitors": {
+					"win": 0,
+					"loss": 0,
+					"series": {
+						"win": 0,
+						"loss": 0
+					},
+					"linescore": ["30", "10", "", ""],
+					"points": 40
+				},
+				"home": {
+					"win": 0,
+					"loss": 0,
+					"series": {
+						"win": 0,
+						"loss": 0
+					},
+					"linescore": ["32", "6", "", ""],
+					"points": 38
+				}
+			},
+			"officials": [],
+			"timesTied": null,
+			"leadChanges": null,
+			"nugget": null
+		}
+	]
+}
